@@ -15,3 +15,5 @@
 ```git log nombre_de_archivo``` log de los commits con cambios en ese archivo
 
 ```git show nombre_de_archivo``` ver cambios historicos en el archivo
+
+### Otros
