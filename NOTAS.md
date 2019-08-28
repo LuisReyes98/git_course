@@ -14,12 +14,19 @@
 
 ```git reset sha_del_commit --soft``` resetea los cambios al estado anterior manteniedo todos los cambios locales no añadidos
 
-
 ### Log
 
 ```git log nombre_de_archivo``` log de los commits con cambios en ese archivo
 
+```git log --stat``` para ver el status de los archivos cambiados por commit
+
+### Show
+
 ```git show nombre_de_archivo``` ver cambios historicos en el archivo
+
+### Checkout
+
+```git checkout sha_del_commit nombre_del_archivo``` cambio solo el archivo seleccionado a su estado en ese commit
 
 ### Diff
 
