@@ -8,11 +8,12 @@ reseta los cambios pero los deja en el working directorie solo hace falta hacer 
 ```git reset --soft [commit]```.
 
 resetea los cambios y los quita del working direcorie hay que hacer ```git add``` una vez mas
-```git reset --mixed [commit]```  
+```git reset --mixed [commit]```
 
 retorna el head un commit deshaciendo el ultimo commit
+comando muy util, resetear ultimo commit sin borrar los cambios
 
-```Shell
+```shell
 git reset HEAD^
 ```
 
@@ -20,25 +21,25 @@ git reset HEAD^
 
 Muestra todos los commit incluso tras un reset hard
 
-```Shell
+```shell
 git log --reflog
 ```
 
 Muestra el log con diffs
 
-```Shell
+```shell
 git log -p
 ```
 
 ### GIT SUPERLOG
 
-```Shell
+```shell
 git config --global alias.superlog "log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"git config --global alias.superlog "log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 ```
 
 ### Configurar variables de git
 
-```Shell
+```shell
 git config --global #variable de forma global
 
 git config --local #variable solo en este repositorio
@@ -46,26 +47,26 @@ git config --local #variable solo en este repositorio
 
 ### Configurar vs code como editor
 
-```Shell
+```shell
 git config --global core.editor "code --wait"
 ```
 
 ### Crear ramas
 
-```Shell
+```shell
 git brach [nombre]
 ```
 
 ### Cambiar nombre de ramas
 
-```Shell
+```shell
 git branch -m responsive RD
 
 ```
 
 ### checkout
 
-```Shell
+```shell
 git checkout [branch name | commit]
 ```
 
@@ -74,7 +75,7 @@ git checkout [branch name | commit]
 teniendo dos ramas debo hacer checkout a la rama que quiero que reciba los datos 
 y luego
 
-```Shell
+```shell
 git merge [branch name]
 ```
 
@@ -91,13 +92,13 @@ es peligroso y solo deberia aplicarse en local
 git rebase: hace prácticamente lo mismo que merge, cambiamos la historia de nuestro proyecto sin crear bifurcaciones del proyecto. Es mejor usar merge
 Usar solo git rebase de manera local.
 
-```Shell
+```shell
 git rebase [branch name]
 ```
 
 -i: de manera interactiva, nos abrira el editor que tengamos definido en la configuración de git.
 
-```Shell
+```shell
 git rebase -i [branch name]
 ```
 
@@ -105,7 +106,7 @@ git rebase -i [branch name]
 
 Te permite extraer un unico commit y aplicar sus cambios en la rama actual
 
-```Shell
+```shell
 git cherry-pick [commit hash]
 ```
 
@@ -115,19 +116,19 @@ git cherry-pick [commit hash]
 
 Añadir primer remoto
 
-```Shell
+```shell
 git remote add origin [ssh/https]
 ```
 
 ver version
 
-```Shell
+```shell
 git remote -v
 ```
 
 eleminar remote
 
-```Shell
+```shell
 git remote remove [name]
 ```
 
@@ -135,19 +136,19 @@ git remote remove [name]
 
 traer datos con pull
 
-```Shell
+```shell
 git pull origin master
 ```
 
 traer datos con fetch
 
-```Shell
+```shell
 git fetch origin master
 ```
 
 y luego
 
-```Shell
+```shell
 git merge origin/master
 ```
 
@@ -157,18 +158,18 @@ git merge origin/master
 
 Asi subimos nuestros cambios a github:
 
-```Shell
+```shell
 git push origin master
 ```
 
 Tambien podemos enviar los tags:
 
-```Shell
+```shell
 git push origin master --tags
 ```
 
 Podemos enviar otras ramas:
 
-```Shell
+```shell
 git push origin [otra_rama]
 ```
