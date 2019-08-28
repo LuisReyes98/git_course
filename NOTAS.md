@@ -16,4 +16,8 @@
 
 ```git show nombre_de_archivo``` ver cambios historicos en el archivo
 
+### Diff
+
+```git diff shacommit_mas_viejo shacommit_mas_nuevo``` ver cambios entre un commit y otro
+
 ### Otros
