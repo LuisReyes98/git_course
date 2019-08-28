@@ -10,6 +10,11 @@
 
 ```git reset HEAD^``` deshace el ultimo commit sin borrar los cambios
 
+```git reset sha_del_commit --hard``` resetea los cambios al estado anterior borrando todos los cambios locales no añadidos
+
+```git reset sha_del_commit --soft``` resetea los cambios al estado anterior manteniedo todos los cambios locales no añadidos
+
+
 ### Log
 
 ```git log nombre_de_archivo``` log de los commits con cambios en ese archivo
