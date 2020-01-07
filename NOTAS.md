@@ -33,3 +33,9 @@
 ```git diff shacommit_mas_viejo shacommit_mas_nuevo``` ver cambios entre un commit y otro
 
 ### Otros
+
+### Commits
+
+```git commit -am``` hace commit agregando todos los cambios de archivos trackeados ( modificados ) ignorando archivos nuevos
+
+```git commit -a``` hace lo mismo que lo anterior pero abre una consola para el mensaje del commit
