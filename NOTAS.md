@@ -24,13 +24,18 @@
 
 ```git show nombre_de_archivo``` ver cambios historicos en el archivo
 
+```git show``` muesta el commit del ultimo cambio que hiciste
+
 ### Checkout
 
 ```git checkout sha_del_commit nombre_del_archivo``` cambio solo el archivo seleccionado a su estado en ese commit
 
+```git checkout nombre_rama``` cambia la branch principal a la branch que se definio en el comando
+
 ### Diff
 
 ```git diff shacommit_mas_viejo shacommit_mas_nuevo``` ver cambios entre un commit y otro
+
 
 ### Otros
 
@@ -39,3 +44,13 @@
 ```git commit -am``` hace commit agregando todos los cambios de archivos trackeados ( modificados ) ignorando archivos nuevos
 
 ```git commit -a``` hace lo mismo que lo anterior pero abre una consola para el mensaje del commit
+
+### Branch
+
+```git branch nombre_de_la_rama``` crear una nueva rama con ese nombre
+
+### Merge
+
+`git merge rama` fusiona la rama actual con la rama especificada
+
+un merge es un commit en la rama donde se realiza
