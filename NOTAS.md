@@ -54,3 +54,12 @@
 `git merge rama` fusiona la rama actual con la rama especificada
 
 un merge es un commit en la rama donde se realiza
+
+### solucion para unrelated histories
+
+caso de ejemplo tienes un repo local que deseas subir a github pero al crear el repositorio de github lo iniciaste con un readme , que hacer?
+
+`git pull origin master --allow-unrelated-histories`
+
+ese comando permitira hacer pull al origin a pesar de que la historia de commits entre master y origin/master es distinta
+
