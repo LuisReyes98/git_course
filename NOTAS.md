@@ -48,3 +48,7 @@
 ### Branch
 
 ```git branch nombre_de_la_rama``` crear una nueva rama con ese nombre
+
+### Merge
+
+`git merge rama` fusiona la rama actual con la rama especificada
