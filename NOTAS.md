@@ -2,6 +2,12 @@
 
 ## Comandos
 
+### Clonar
+
+```shell
+git clone $URL_O_SSH_DEL_REPOSITORIO
+```
+
 ### Status
 
 ```git status``` dice el status actual de archivos en git
@@ -45,9 +51,15 @@
 
 ```git commit -a``` hace lo mismo que lo anterior pero abre una consola para el mensaje del commit
 
-### Branch
+### Branches
 
 ```git branch nombre_de_la_rama``` crear una nueva rama con ese nombre
+
+ver todas las branches disponibles en local
+
+```shell
+git show-branch --all
+```
 
 ### Merge
 
@@ -100,5 +112,5 @@ git tag -d $NOMBRE_DEL_TAG
 borrar un tag en el repositorio
 
 ```shell
-git push origin :refs/tags/dormido
+git push origin :refs/tags/$NOMBRE_DEL_TAG
 ```
