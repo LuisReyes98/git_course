@@ -84,3 +84,21 @@ mostrar tag y su commit
 ```shell
 git show-ref --tags
 ```
+
+enviar los tags al repositorio en internet
+
+```shell
+git push origin --tags
+```
+
+borrar un tag en local
+
+```shell
+git tag -d $NOMBRE_DEL_TAG
+```
+
+borrar un tag en el repositorio
+
+```shell
+git push origin :refs/tags/dormido
+```
