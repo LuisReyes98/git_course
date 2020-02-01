@@ -63,3 +63,24 @@ caso de ejemplo tienes un repo local que deseas subir a github pero al crear el 
 
 ese comando permitira hacer pull al origin a pesar de que la historia de commits entre master y origin/master es distinta
 
+### ver tus datos de usuario
+
+`git config -l`
+
+### Github y SSH
+
+[Git Hub y SSH](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
+
+### Tags
+
+comando de crear un tag
+
+```shell
+git tag -a $NOMBRE_DEL_TAG -m "Mensaje del tag" $HASH_DEL_COMMIT
+```
+
+mostrar tag y su commit
+
+```shell
+git show-ref --tags
+```
