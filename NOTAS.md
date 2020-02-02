@@ -61,6 +61,12 @@ ver todas las branches disponibles en local
 git show-branch --all
 ```
 
+hacer checkout a una rama y crearla al mismo tiempo
+
+```shell
+git checkout -b branch_name
+```
+
 ### Merge
 
 `git merge rama` fusiona la rama actual con la rama especificada
