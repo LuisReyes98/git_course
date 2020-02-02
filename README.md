@@ -125,5 +125,22 @@ git push origin :refs/tags/$NOMBRE_DEL_TAG
 
 en proyectos de codigo abierto el manejo del codigo con pull request es algo comun ya que permite colaborar de forma organizada y ordenada al proyecto
 
+al hacer esto se hace necesario que tu fork del proyecto se mantenga al dia con el master por lo cual lo mejor es tener un remote aparte
 
+agregar un remote con nombre al proyecto
 
+```shell
+git remote add $nombre_del_remote $url_o_ssh_del_proyecto
+```
+
+ademas plataformas como GitHub permiten hacer pull request desde el proyecto padre hacia tu fork, cuando el padre empieza a tener cambios que el fork no posee
+
+### manejo con servidores
+
+Existen servicios como:
+
+- [Travis CI](https://travis-ci.org/) que permiten mantener al servidor actualizado constantemente, lo que haces le das accesos de git y accesos de tu servidor y cuando haya push en la rama especificada en el git, travis le hara pull en el server a los cambios. travis cuesta dinero a menos que sea un proyecto open source.
+
+- [Jenkins](https://jenkins.io/) , este se instala en el servidor es complejo y poderoso
+
+ambos servicios permiten aplicar integracion continua
