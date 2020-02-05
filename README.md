@@ -178,3 +178,15 @@ permite contar informacion de que es un proyecto, como funciona, que requerimien
 
 > Muy buen curso
 > - Luis Reyes
+
+### Pages
+
+[GitHub Pages](https://pages.github.com/) y [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/) son servicios que proveen GitLab y GitHub para publicar en un sitio web de forma gratuita un repostorio publico como una pagina web.
+
+Este servicio permite publicar paginas web que no poseean backend.
+
+#### Permitir que GitHub te deja crear la pagina con un home 
+
+ejemplo: `NOMBRE_REPOSITORIO.github.io` y este sea el index.html
+
+para que funcione el nombre del repositorio debe ser `NOMBRE_DE_USUARIO.github.io`
