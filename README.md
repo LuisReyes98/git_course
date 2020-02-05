@@ -2,6 +2,22 @@
 
 ## Notas y Comandos
 
+### Pull y Push
+
+Subir cambios al repostorio
+
+`git push remote rama`
+
+`git push origin master`
+
+Descargar cambios del repositorio
+
+`git pull remote rama`
+
+`git pull origin master`
+
+es buena practica hacer pull de manera frecuente y antes de hacer cambios
+
 ### Clonar
 
 ```shell
@@ -154,3 +170,11 @@ Es mala practica guardar archivos binarios en un repositorio ya que estos deberi
 hay pocas execepciones a esta regla como puede ser el logo del programa, pero cualquier imagen que deberia ser mandada por internet no deberia estar en el repositorio.
 
 para ignorar estos archivos exites el `.gitignore` , el cual almacena una lista de rutas de archivos a ignorar
+
+### README.md
+
+este archivo :smile:, se utiliza para poder contar al historia de un proyecto de forma bonita y legible.
+permite contar informacion de que es un proyecto, como funciona, que requerimientos posee entre otros.
+
+> Muy buen curso
+> - Luis Reyes
