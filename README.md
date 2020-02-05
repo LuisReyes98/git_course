@@ -144,3 +144,13 @@ Existen servicios como:
 - [Jenkins](https://jenkins.io/) , este se instala en el servidor es complejo y poderoso
 
 ambos servicios permiten aplicar integracion continua
+
+### Ignores
+
+No todos los archivos deberian ir a un repositorio ya sea por seguridad, porque son archivos binarios que no deberian ser guardados , son cache o son archivos autogenerados
+
+Es mala practica guardar archivos binarios en un repositorio ya que estos deberian ser suministrados por un content delivery network.
+
+hay pocas execepciones a esta regla como puede ser el logo del programa, pero cualquier imagen que deberia ser mandada por internet no deberia estar en el repositorio.
+
+para ignorar estos archivos exites el `.gitignore` , el cual almacena una lista de rutas de archivos a ignorar
