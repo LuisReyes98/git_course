@@ -207,3 +207,13 @@ git rebase $RAMA_A_LA_CUAL_SE_UNIRAN_LOS_CAMBIOS
 al hacer esto si la rama a la que se fusionara tiene commits mas adelante de la actual el rebase ejcutara los cambios, tambien considerar que solo funcionara cuando la rama a hacer rebase es una bifurcacion con la que se trata de unir.
 
 es una mala practica porque cambia la historia de en que momento se creo un branch
+
+para ejecutar el rebase, primero se hace un rebase de la rama que deseas borrar con la que uniras los cambios y depues un rebase desde la rama a la que uniras los cambios con la que desear borrar, ejemplo:
+
+para hacer rebase de la rama `exp` en `master` se hace
+
+```shell
+(exp)$ git rebase master
+
+(master)$ git rebase exp
+```
