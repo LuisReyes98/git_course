@@ -197,3 +197,9 @@ Permite reescribir la historia de los repositorios y pegar todos los cambios de 
 
 *ESTA ES UNA MUY MALA PRACTICA HACERLO CON RAMAS QUE ESTAN EN REPOSITORIOS REMOTOS*
 por lo cual solo se deberia hacerse internamente y en repositiorios Locales.
+
+en la rama que borras ejecutas el comando rebase para mandar sus cambios a la rama donde se fucionaran, reescribiendo la historia del repositorio
+
+```shell
+git rebase $RAMA_A_LA_CUAL_SE_UNIRAN_LOS_CAMBIOS
+```
