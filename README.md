@@ -205,3 +205,5 @@ git rebase $RAMA_A_LA_CUAL_SE_UNIRAN_LOS_CAMBIOS
 ```
 
 al hacer esto si la rama a la que se fusionara tiene commits mas adelante de la actual el rebase ejcutara los cambios, tambien considerar que solo funcionara cuando la rama a hacer rebase es una bifurcacion con la que se trata de unir.
+
+es una mala practica porque cambia la historia de en que momento se creo un branch
