@@ -185,8 +185,15 @@ permite contar informacion de que es un proyecto, como funciona, que requerimien
 
 Este servicio permite publicar paginas web que no poseean backend.
 
-#### Permitir que GitHub te deja crear la pagina con un home 
+#### Permitir que GitHub te deja crear la pagina con un home
 
-ejemplo: `NOMBRE_REPOSITORIO.github.io` y este sea el index.html
+ejemplo: `NOMBRE_REPOSITORIO.github.io` y entonces al abrir es sitio web abrirars el index.html del repositorio
 
 para que funcione el nombre del repositorio debe ser `NOMBRE_DE_USUARIO.github.io`
+
+### Rebase
+
+Permite reescribir la historia de los repositorios y pegar todos los cambios de rama A a rama B, pero de tal forma como si rama jamas hubiese existido.
+
+*ESTA ES UNA MUY MALA PRACTICA HACERLO CON RAMAS QUE ESTAN EN REPOSITORIOS REMOTOS*
+por lo cual solo se deberia hacerse internamente y en repositiorios Locales.
