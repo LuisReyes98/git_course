@@ -87,6 +87,18 @@ hacer checkout a una rama y crearla al mismo tiempo
 git checkout -b branch_name
 ```
 
+ver todas las ramas remotas
+
+```shell
+git branch -r
+```
+
+ver todas las ramas remotas y locales
+
+```shell
+git branch -a
+```
+
 ### Merge
 
 `git merge rama` fusiona la rama actual con la rama especificada
@@ -368,4 +380,20 @@ muestra la cantidad de commits (considerando todos los commits) sin contar los m
 
 ```shell
 git shortlog -sn --all --no-merges
+```
+
+### Aliases
+
+permite crear comandos custom de git que ejecutan otro comando de git.
+
+*Superlog*: `git superlog`, `git log` mas bonito:
+
+```shell
+git config --global alias.superlog "log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+```
+
+*Stats*: `git stats`, `git shortlog` mas resumido que permite ver la cantidad de commits por persona, (estadisticas):
+
+```shell
+git config --global alias.stats "shortlog -sn --all --no-merges"
 ```
