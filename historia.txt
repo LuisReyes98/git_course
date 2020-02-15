@@ -13,3 +13,5 @@ experimento 2
 
 
 Creado por el increible Luis Reyes
+
+incluye ejemplos en widows linux y mac
