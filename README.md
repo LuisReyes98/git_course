@@ -299,3 +299,21 @@ se fusionan estos cambios con el commit anterior con:
 ```shell
 git commit --amend
 ```
+
+### Git Reflog y Git Reset
+
+*usar git reset es mala practica* porque borra la historia del repositorio como si los cambio nunca hubieran pasado.
+
+si en caso de que un error masivo de archivos, se perdieron datos y no hay forma de recuperarlos con el git log, use *reflog*
+
+Muestra la historia de *TODO* desde merge fallidos a branch borrados, orden en que se ejecutaron resets incluso estados del repositorio antes de un reset
+
+```shell
+git reflog
+```
+
+con este comando muestra la historia de acciones que han occurido en el repositorio
+
+y usando `git reset` con el SHA de un commit de `git reflog` puedes volver en el tiempo a cualquier momento en el rpeositorio incluso a branches que ya no existen.
+
+hacer esto es *mala practica* y solo deberia realizarse si algo se rompio en de forma tan grave que no se puede reparar y solo se puede volver en el tiempo.
