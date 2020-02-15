@@ -397,3 +397,17 @@ git config --global alias.superlog "log --graph --abbrev-commit --decorate --dat
 ```shell
 git config --global alias.stats "shortlog -sn --all --no-merges"
 ```
+
+## Proximos pasos
+
+Sistemas de automatizacion de deployment
+
+- [Jenkins](https://jenkins.io/)
+- [Travis](https://travis-ci.org/)
+
+Ciclo de vida DevOps de un proyecto desde:
+
+- Testing
+- Deployment
+- Code Maintenance
+- Constant Development Constant Deployment
