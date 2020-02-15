@@ -251,3 +251,19 @@ borrar el ultimo stash
 ```shell
 git stash drop
 ```
+
+### Git clean
+
+funciona para borrar archivos que no estan siendo trackeados por git, pero ignora los archivos que se ignorarian con el git ignore
+
+para ver los archivos que git clean borrara es con
+
+```shell
+git clean --dry-run
+```
+
+para borrar los archivos que se vieron con el dry-run es con
+
+```shell
+git clean -f
+```
