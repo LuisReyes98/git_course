@@ -356,6 +356,22 @@ buscar los commits en los cuales sale una palabra
 git log -S "palabra a buscar"
 ```
 
+### Git rm
+
+git rm permite borrar archivos del repositorio siempre y cuando hayan estado en staging. Es equivalente a darle click a un archivo y eliminarlo
+
+ver el archivo que se borrara
+
+```shell
+git rm $nombre_del_archivo --dry-run
+```
+
+Borrar el archivo del disco
+
+```shell
+git rm $nombre_del_archivo
+```
+
 ### Shortlog
 
 Permite ver un historial de todos los commits por persona
