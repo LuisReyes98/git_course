@@ -274,7 +274,9 @@ git clean -f
 
 ### Cherry pick
 
-(de mis comandos favoritos)
+usar cherry pick de forma constante es una mala practica
+
+(es de mis comandos favoritos)
 es un comando util y que permite copiar unico commit de una rama y fusionarlo en otra
 
 copia un commit y lo fusiona con la rama actual
