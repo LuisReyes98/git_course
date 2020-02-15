@@ -284,3 +284,18 @@ copia un commit y lo fusiona con la rama actual
 ```shell
 git cherry-pick $SHA_DEL_COMMIT
 ```
+
+### Commit --amend
+
+en ciertos casos haces un commit pero te das cuenta que no debias hacer commit aun porque faltaban, cambios por agregar.
+para solucionar esto *SIN HACER PUSH* , *amend no funcionara si el commit ya esta en el repositorio remoto* ya que esto causaria conflicto de historias.
+
+commitear los cambios en el ultimo commit
+
+una vez los cambios se hayan agregado en el head
+
+se fusionan estos cambios con el commit anterior con:
+
+```shell
+git commit --amend
+```
