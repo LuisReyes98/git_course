@@ -411,3 +411,4 @@ Ciclo de vida DevOps de un proyecto desde:
 - Deployment
 - Code Maintenance
 - Constant Development Constant Deployment
+- DevOps y GitLab
