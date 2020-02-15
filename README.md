@@ -217,3 +217,25 @@ para hacer rebase de la rama `exp` en `master` se hace
 
 (master)$ git rebase exp
 ```
+
+#### Git stash
+
+funciona para guardar cambios sin comitearlos de forma temporal
+
+Le hace Stash a los cambios que no forman parte de un commit
+
+```shell
+git stash
+```
+
+puedes ver la lista de stash creados
+
+```shell
+git stash list
+```
+
+le haces pop al ultimo stash aplicando los cambios en la branch actual
+
+```shell
+git stash pop
+```
