@@ -239,3 +239,9 @@ le haces pop al ultimo stash aplicando los cambios en la branch actual
 ```shell
 git stash pop
 ```
+
+pasar los cambios del stash a una branch nueva
+
+```shell
+git stash branch $nuevo_nombre_de_la_rama
+```
