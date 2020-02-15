@@ -343,3 +343,29 @@ buscar los commits en los cuales sale una palabra
 ```shell
 git log -S "palabra a buscar"
 ```
+
+### Shortlog
+
+Permite ver un historial de todos los commits por persona
+
+```shell
+git shortlog
+```
+
+muestra solamente la cantidad de commits por persona
+
+```shell
+git shortlog -sn
+```
+
+muestra la cantidad de commits (considerando todos los commits) por persona
+
+```shell
+git shortlog -sn --all
+```
+
+muestra la cantidad de commits (considerando todos los commits) sin contar los merges por persona
+
+```shell
+git shortlog -sn --all --no-merges
+```
