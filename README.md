@@ -245,3 +245,9 @@ pasar los cambios del stash a una branch nueva
 ```shell
 git stash branch $nuevo_nombre_de_la_rama
 ```
+
+borrar el ultimo stash
+
+```shell
+git stash drop
+```
