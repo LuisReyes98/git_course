@@ -2,6 +2,10 @@
 
 ## Notas y Comandos
 
+### Trackeo
+
+git trackaera los cambios en archivos agregados, y los archivos nuevos deben ser agregados al HEAD por primera vez para iniciar el trackeo, ademas a git le importan los archivos e ignorara completamente las carpetas vacias.
+
 ### Pull y Push
 
 Subir cambios al repostorio
@@ -267,3 +271,5 @@ para borrar los archivos que se vieron con el dry-run es con
 ```shell
 git clean -f
 ```
+
+### Cherry pick
