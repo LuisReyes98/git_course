@@ -317,3 +317,29 @@ con este comando muestra la historia de acciones que han occurido en el reposito
 y usando `git reset` con el SHA de un commit de `git reflog` puedes volver en el tiempo a cualquier momento en el rpeositorio incluso a branches que ya no existen.
 
 hacer esto es *mala practica* y solo deberia realizarse si algo se rompio en de forma tan grave que no se puede reparar y solo se puede volver en el tiempo.
+
+### Realizar busquedas en el repositorio
+
+buscar palabras en los archivos en el branch actual
+
+```shell
+git grep "palabra a buscar"
+```
+
+mostrar la linea en la cual la pablara aparece en el archivo
+
+```shell
+git grep -n "palabra a buscar"
+```
+
+mostrar cuantas veces aparce la palabra en cada archivo
+
+```shell
+git grep -c "palabra a buscar"
+```
+
+buscar los commits en los cuales sale una palabra
+
+```shell
+git log -S "palabra a buscar"
+```
