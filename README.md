@@ -211,7 +211,7 @@ para que funcione el nombre del repositorio debe ser `NOMBRE_DE_USUARIO.github.i
 
 Permite reescribir la historia de los repositorios y pegar todos los cambios de rama A a rama B, pero de tal forma como si rama jamas hubiese existido.
 
-*ESTA ES UNA MUY MALA PRACTICA HACERLO CON RAMAS QUE ESTAN EN REPOSITORIOS REMOTOS*
+**ESTA ES UNA MUY MALA PRACTICA HACERLO CON RAMAS QUE ESTAN EN REPOSITORIOS REMOTOS**
 por lo cual solo se deberia hacerse internamente y en repositiorios Locales.
 
 en la rama que borras ejecutas el comando rebase para mandar sus cambios a la rama donde se fucionaran, reescribiendo la historia del repositorio
@@ -286,7 +286,7 @@ git clean -f
 
 ### Cherry pick
 
-*Usar cherry pick es una mala practica*, para pasar cambios entre ramas es mejor hacer un merge
+**Usar cherry pick es una mala practica**, para pasar cambios entre ramas es mejor hacer un merge
 
 (es de mis comandos favoritos)
 es un comando util y que permite copiar un unico commit de una rama y fusionarlo en otra
@@ -300,7 +300,7 @@ git cherry-pick $SHA_DEL_COMMIT
 ### Commit --amend
 
 en ciertos casos haces un commit pero te das cuenta que no debias hacer commit aun porque faltaban, cambios por agregar.
-para solucionar esto *SIN HACER PUSH* , *amend no funcionara si el commit ya esta en el repositorio remoto* ya que esto causaria conflicto de historias.
+para solucionar esto **SIN HACER PUSH** , **amend no funcionara si el commit ya esta en el repositorio remoto** ya que esto causaria conflicto de historias.
 
 commitear los cambios en el ultimo commit
 
@@ -314,11 +314,11 @@ git commit --amend
 
 ### Git Reflog y Git Reset
 
-*usar git reset es mala practica* porque borra la historia del repositorio como si los cambio nunca hubieran pasado.
+**usar git reset es mala practica** porque borra la historia del repositorio como si los cambio nunca hubieran pasado.
 
-si en caso de que un error masivo de archivos, se perdieron datos y no hay forma de recuperarlos con el git log, use *reflog*
+si en caso de que un error masivo de archivos, se perdieron datos y no hay forma de recuperarlos con el git log, use **reflog**
 
-Muestra la historia de *TODO* desde merge fallidos a branch borrados, orden en que se ejecutaron resets incluso estados del repositorio antes de un reset
+Muestra la historia de **TODO** desde merge fallidos a branch borrados, orden en que se ejecutaron resets incluso estados del repositorio antes de un reset
 
 ```shell
 git reflog
@@ -328,7 +328,7 @@ con este comando muestra la historia de acciones que han occurido en el reposito
 
 y usando `git reset` con el SHA de un commit de `git reflog` puedes volver en el tiempo a cualquier momento en el rpeositorio incluso a branches que ya no existen.
 
-hacer esto es *mala practica* y solo deberia realizarse si algo se rompio en de forma tan grave que no se puede reparar y solo se puede volver en el tiempo.
+hacer esto es **mala practica** y solo deberia realizarse si algo se rompio en de forma tan grave que no se puede reparar y solo se puede volver en el tiempo.
 
 ### Realizar busquedas en el repositorio
 
@@ -386,13 +386,13 @@ git shortlog -sn --all --no-merges
 
 permite crear comandos custom de git que ejecutan otro comando de git.
 
-*Superlog*: `git superlog`, `git log` mas bonito:
+**Superlog**: `git superlog`, `git log` mas bonito:
 
 ```shell
 git config --global alias.superlog "log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
 ```
 
-*Stats*: `git stats`, `git shortlog` mas resumido que permite ver la cantidad de commits por persona, (estadisticas):
+**Stats**: `git stats`, `git shortlog` mas resumido que permite ver la cantidad de commits por persona, (estadisticas):
 
 ```shell
 git config --global alias.stats "shortlog -sn --all --no-merges"
@@ -412,3 +412,4 @@ Ciclo de vida DevOps de un proyecto desde:
 - Code Maintenance
 - Constant Development Constant Deployment
 - DevOps y GitLab
+- Usar `git $comando --help` para conocer mas de los comandos y crear mis propios comandos custom y geniales
