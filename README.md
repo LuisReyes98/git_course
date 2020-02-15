@@ -62,7 +62,6 @@ git clone $URL_O_SSH_DEL_REPOSITORIO
 
 ```git diff shacommit_mas_viejo shacommit_mas_nuevo``` ver cambios entre un commit y otro
 
-
 ### Otros
 
 ### Commits
