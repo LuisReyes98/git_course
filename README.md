@@ -274,7 +274,7 @@ git clean -f
 
 ### Cherry pick
 
-usar cherry pick de forma constante es una mala practica
+usar cherry pick de forma constante es una mala practica, para pasar cambios entre ramas es mejor hacer un merge
 
 (es de mis comandos favoritos)
 es un comando util y que permite copiar unico commit de una rama y fusionarlo en otra
